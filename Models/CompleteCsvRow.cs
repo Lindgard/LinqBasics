@@ -4,15 +4,15 @@ namespace be_linqBasics.Models;
 
 public class CompleteCsvRow
 {
-    public string City { get; set; } = string.Empty;
-    public int Year { get; set; }
-    public string State { get; set; } = string.Empty;
-    public string Country { get; set; } = string.Empty;
-    public string Shape { get; set; } = string.Empty;
-    public int DurationInSeconds { get; set; }
-    public string Duration { get; set; } = string.Empty;
-    public string Comments { get; set; } = string.Empty;
-    public int DatePosted { get; set; }
-    public decimal Latitude { get; set; }
-    public decimal Longitude { get; set; }
+    public string city { get; set; } = string.Empty;
+    public int year { get; set; }
+    public string state { get; set; } = string.Empty;
+    public string country { get; set; } = string.Empty;
+    public string shape { get; set; } = string.Empty;
+    public int durationInSeconds { get; set; }
+    public string duration { get; set; } = string.Empty;
+    public string comments { get; set; } = string.Empty;
+    public int datePosted { get; set; }
+    public decimal latitude { get; set; }
+    public decimal longitude { get; set; }
 }
