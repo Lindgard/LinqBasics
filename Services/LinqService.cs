@@ -11,6 +11,15 @@ public class LinqServices
     }
 
     /// <summary>
+    /// SELECT - Returns a list of all cities from the sightings.
+    /// </summary>
+    /// <returns>An enumerable of city names from the sightings.</returns>
+    public IEnumerable<string> GetAllCities()
+    {
+        return _sightings.Select(s => s.City);
+    }
+
+    /// <summary>
     /// WHERE - Returns all sightings that occurred in the United States.
     /// </summary>
     /// <returns>An enumerable of Sighting objects that occurred in the United States.</returns>
