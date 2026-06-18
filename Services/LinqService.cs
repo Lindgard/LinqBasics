@@ -36,4 +36,13 @@ public class LinqServices
     {
         return _sightings.GroupBy(s => s.Shape);
     }
+
+    /// <summary>
+    /// DISTINCT - Returns a list of distinct shapes from the sightings.
+    /// </summary>
+    /// <returns>An enumerable of distinct shapes from the sightings.</returns>
+    public IEnumerable<string> GetDistinctShapes()
+    {
+        return _sightings.Select(s => s.Shape).Distinct();
+    }
 }
