@@ -1,9 +1,11 @@
-﻿namespace be_linqBasics;
+﻿using be_linqBasics.Controllers;
+namespace be_linqBasics;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var controller = new UfoController();
+        controller.Run();
     }
 }
