@@ -1,11 +1,11 @@
 using be_linqBasics.Models;
 namespace be_linqBasics.Services;
 
-public class LinqServices
+public class LinqService
 {
     private readonly List<Sighting> _sightings;
 
-    public LinqServices(List<Sighting> sightings)
+    public LinqService(List<Sighting> sightings)
     {
         _sightings = sightings;
     }
